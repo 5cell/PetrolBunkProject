@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AccountTabWidget</class>
+ <widget class="QTabWidget" name="AccountTabWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>701</width>
+    <height>473</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TabWidget</string>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <widget class="QWidget" name="DailyLogTab">
+   <attribute name="title">
+    <string>Daily Log</string>
+   </attribute>
+   <layout class="QVBoxLayout" name="DailyLogTabLayout">
+    <item>
+     <layout class="QHBoxLayout" name="DailyLogHLayout_2">
+      <item>
+       <spacer name="DailyLogHSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="DailyLogDateEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableView" name="DailyLogTableView"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="DailyLogHLayout_1">
+      <item>
+       <spacer name="DailyLogHSpacer_1">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="AccountButton">
+        <property name="text">
+         <string>Close Account</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="DailyLogHSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="WeeklyLogTab">
+   <attribute name="title">
+    <string>Weekly Log</string>
+   </attribute>
+   <layout class="QVBoxLayout" name="WeeklyLogTabLayout">
+    <item>
+     <layout class="QHBoxLayout" name="WeeklyLogHLayout_2">
+      <item>
+       <spacer name="WeeklyLogHSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="WeeklyLogDateEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableView" name="WeeklyLogTableView"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="WeeklyLogHLayout_1">
+      <item>
+       <spacer name="WeeklyLogHSpacer_1">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="WeeklyAccountButton">
+        <property name="text">
+         <string>Close Account</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="WeeklyLogHSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="EmployeeStatusTab">
+   <attribute name="title">
+    <string>Employee Status</string>
+   </attribute>
+   <layout class="QVBoxLayout" name="EmployeeStatusTabLayout">
+    <item>
+     <spacer name="EmployeeStatusVSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>5</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="EmpStatusTabHLayout_2">
+      <item>
+       <widget class="QLabel" name="AccountStatusLabel">
+        <property name="text">
+         <string>Account Status(Open/Closed)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="EmployeeStatusHSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableView" name="EmployeeStatusTable"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="EmpStatusTabHLayout_1">
+      <item>
+       <spacer name="EmployeeStatusHSpacer_1">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="AssignButton">
+        <property name="text">
+         <string>Assign</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="CloseAccoutButton">
+        <property name="text">
+         <string>Close Account</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="EmployeeStatusHSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+   <zorder>EmployeeStatusTable</zorder>
+   <zorder>EmployeeStatusVSpacer</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
